@@ -1,4 +1,4 @@
-To SSH into one machine to another machine
+--To SSH into one machine to another machine--
  
 1) Machine1
 2) Machine2
