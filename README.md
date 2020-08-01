@@ -2,12 +2,12 @@ To create ansible user with sudo permission
 become root user
 ---
    $ adduser ansible
-   # This command will ask password provide it
+   - This command will ask password provide it
 ---
 once you created user, next thing is you have to add this user to VISUDO file
 ---
    $ visuo
-   # mention your user (ansible) to %sudo group
+   - mention your user (ansible) to %sudo group
    $ ansible  ALL=(ALL:ALL) NOPASSWD:ALL
 ---
 Save and exit
