@@ -1,4 +1,4 @@
-To create ansible user with sudo permission
+To create ansible user with sudo permission.
 become root user
 ---
    $ adduser ansible
