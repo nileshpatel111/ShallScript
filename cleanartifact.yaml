@@ -1,0 +1,13 @@
+---
+- name: This file to copy war file to remote apache webapps
+  hosts: all
+  become: yes
+  tasks:
+    - name: clean gameoflife.war from tomcat webapps
+      file:
+        path: /opt/tomcat/apache-tomcat-8.5.57/webapps/gameoflife.war
+        state: absent
+    - name: clean gameoflife.war from tomcat webapps
+      file:
+        path: /opt/tomcat/apache-tomcat-8.5.57/webapps/gameoflife
+        state: absent
