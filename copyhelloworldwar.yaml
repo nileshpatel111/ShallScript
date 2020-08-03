@@ -1,0 +1,9 @@
+---
+- name: This file to copy war file to remote apache webapps
+  hosts: all
+  become: yes
+  tasks:
+    - name: copy hello world war to tomcat webapps
+      copy:
+        src: /home/jenkins/workspace/Hello-Indore/webapp/target/webapp.war
+        dest: /opt/tomcat/apache-tomcat-8.5.57/webapps/
