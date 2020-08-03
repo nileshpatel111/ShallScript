@@ -1,0 +1,13 @@
+---
+- name: This file to remove webapp war file from the remote
+  hosts: all
+  become: yes
+  tasks:
+    - name: clean webapp.war from tomcat webapps
+      file:
+        path: /opt/tomcat/apache-tomcat-8.5.57/webapps/webapp.war
+        state: absent
+    - name: clean webapp  from tomcat webapps
+      file:
+        path: /opt/tomcat/apache-tomcat-8.5.57/webapps/webapp
+        state: absent
